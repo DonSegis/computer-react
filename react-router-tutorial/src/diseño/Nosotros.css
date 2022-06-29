@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nosotros-body{
+    background: black;
+    background-size: 100% 100%;
+    background-repeat:no-repeat ;
+    object-fit: cover;
+    padding-top: 100px ;
+    z-index: 50;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    
+    
+}
+
+.contein{
+
+    height: auto;
+    width: auto;
+    margin-bottom: 20%;
+    contain: content;
+    color: #B5B2B2;
+    
+}
+.contei-logo{
+
+    display: inline-block;
+    width: 600px;
+    float: left;
+    padding: 10% 10% 20%;
+}
+
+.nosotro{
+
+    display: inline-block;
+    width: 50%;
+    float: right;
+    color: #B5B2B2;;
+    padding: 0 10%;
+    font-size: 20px;
+    image-resolution: 100px;
+
+}
+.nosotro p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contei-logo b{
+    float: left;
+    position: relative;
+    left: 140px;
+    top: -50px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.contei-logo img{
+    width: 300px;
+    margin-left: 40%;
+    background: #B5B2B2;
+    padding: 50px;
+    position: relative;
+    top: -20px;
+    border-radius: 20px;
+    box-shadow: 4px 8px 0 gray;
+    transition: 1s;
+    z-index: 20;
+}
+
+.contei-logo img:hover{
+    width: 315px;
+    top: -70px;
+    box-shadow: 4px 8px 0 green;
+}
+
+.nav img{
+    width: 100px;
+}
+
+.footer-contenedor-logo img{
+    width: 250px;
+}

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-body {
+    font-family: Arial;
+    background-image: url('../img/login/fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.from-login {
+    width: 500px;
+    height: auto;
+    background: rgba(63, 63, 63, 0.873);
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: #017bab;
+}
+
+.from-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    color: white;
+}
+
+.from-login img {
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.from-login button {
+    width: 100%;
+    height: 40px;
+    background: green;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.from-login button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.from-login p {
+    height: 40px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.from-login h4 {
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.from-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.from-login a:hover{
+    text-decoration: underline;
+}

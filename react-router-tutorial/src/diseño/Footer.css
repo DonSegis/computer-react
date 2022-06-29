@@ -1,0 +1,48 @@
+footer{
+    background-image: url("../img/footer/model-3211631_960_720.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    color: #B5B2B2;
+
+}
+
+
+.footer-contenedor {
+    padding-bottom: 40px;
+    margin-top: 10%;
+}
+
+
+.footer-contenedor-logo{
+    display: inline-block;
+    margin-bottom: 0;
+    width: 40%;
+}
+
+.footer-contenedor-logo img{
+    width: 250px;
+}
+
+.footer-menu1{
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.footer-menu2{
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.footer-menu3{
+    display: inline-block;
+    margin-right: 10%;
+}
+
+footer li{
+    margin-bottom: 10px;
+}
+
+footer a{
+    color: #B5B2B2;
+}
