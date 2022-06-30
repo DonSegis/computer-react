@@ -1,208 +1,159 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Source Serif Pro', serif;
+* {
+  box-sizing: border-box;
+  font-family: "Source Serif Pro", serif;
 }
 
 .tienda-body {
-    margin: 0px;
-    background-image: url('../img/tienda/fondo.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    font-family: Arial;
+  margin: 0px;
+  background-image: url("../img/tienda/fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial;
 }
 
-.Fondo{
-    width: auto;
-    height: 1500px;
-    background: rgba(63, 63, 63, 0.788);
-    position: relative;
-    margin-bottom: 0;
+.Fondo {
+  width: auto;
+  height: 100%;
+  background: rgba(63, 63, 63, 0.788);
+  position: relative;
+  margin-bottom: 0;
+  contain: content;
+  padding-top: 30px;
 }
 
 .titulo {
-    color: white;
-    padding: 15px;
+  color: white;
+  padding-top: 15px;
 }
 
 .page-nave {
-    background-color: blueviolet;
-    border: 1px solid blue;
+  background-color: blueviolet;
+  border: 1px solid blue;
 }
 
 .page-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+  display: block;
+  position: relative;
+  justify-content: space-evenly;
 }
 
-.page-content h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+.page-content h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.page-content h3{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.page-content h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .product-container {
-    margin: 20px;
-    padding: 2px 16px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.241);
-    background-color: black;
-    color: white;
-    
+  margin: 20px;
+  padding: 2px 16px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.241);
+  background-color: black;
+  color: white;
+  display: inline-block;
 }
 
 .product-container h3 {
-    width: 230px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  width: 230px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .product-container:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.441);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.441);
 }
 
 .product-container img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .product-container h1 {
-    margin-bottom: 20px;
-    margin-left: 15px;
+  margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 .button-add {
-    font-size: 16px;
-    text-align: center;
-    border-radius: 8px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: 2px solid green;
-    transition-duration: 0.4s;
-    position: absolute;
-    right: 15px;
-    bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: 2px solid green;
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
 }
 
 .button-add:hover {
-    background-color: green;
-    color: white
+  background-color: green;
+  color: white;
 }
 
-footer{
-    background-image: url("../img/footer/model-3211631_960_720.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-    color: #B5B2B2;
-
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: block;
 }
 
-
-.footer-contenedor {
-    padding-bottom: 40px;
-    /* margin-top: 10%; */
+.nav-wrapper {
+  background-color: blueviolet;
 }
 
-
-.footer-contenedor-logo{
-    display: inline-block;
-    margin-bottom: 0;
-    width: 40%;
+.nav img {
+  width: 100px;
 }
 
-.footer-contenedor-logo img{
-    width: 250px;
+.brand-logo2 {
+  margin-right: 100px;
 }
 
-.footer-menu1{
-    display: inline-block;
-    margin-right: 10%;
+.lista-links {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.lista-links li {
+  margin: 15px 10% 30px;
+  transition: 1s;
 }
 
-.footer-menu2{
-    display: inline-block;
-    margin-right: 10%;
+.lista2-links {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
 }
 
-.footer-menu3{
-    display: inline-block;
-    margin-right: 10%;
+.lista2-links li {
+  margin: 0 10% 30px;
 }
 
-footer li{
-    margin-bottom: 10px;
+.lista-links li :hover {
+  border-bottom: solid purple;
+  position: relative;
+  top: -10px;
+  font-size: 25px;
+}
+.Titulo a {
+  color: #b5b2b2;
 }
 
-footer a{
-    color: #B5B2B2;
+.lista2-links li :hover {
+  border-bottom: solid purple;
+  position: relative;
+  top: -10px;
+  font-size: 25px;
 }
 
-.nav{
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    display: block;
-}
-
-.nav-wrapper{
-    background-color: blueviolet;
-}
-
-.nav img{
-    width: 100px;
-}
-
-.brand-logo2{
-    margin-right: 100px;
-}
-
-
-
-.lista-links{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-
-}
-.lista-links li{
-    margin: 15px 10% 30px;
-    transition: 1s;
-    
-}
-
-.lista2-links{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-}
-
-.lista2-links li{
-    margin: 0 10% 30px;
-    
-    
-}
-
-.lista-links li :hover{
-    border-bottom:  solid purple;
-    position: relative;
-    top: -10px;
-    font-size: 25px;
-}
-.Titulo a{
-    color: #B5B2B2;
-}
-
-.lista2-links li :hover{
-    border-bottom:  solid purple;
-    position: relative;
-    top: -10px;
-    font-size: 25px;
+.div-contenedor {
+  display: inline-block;
+  margin: 30px;
+  padding: 10px;
 }

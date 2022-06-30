@@ -1,0 +1,29 @@
+.body-legal {
+  background: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding-top: 100px;
+  z-index: 50;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container-legal h1 {
+  font-family: "Radio Canada", sans-serif;
+  color: #ffffff;
+}
+.container-legal h3 {
+  font-family: "Radio Canada", sans-serif;
+  color: #ffffff;
+}
+.container-legal p {
+  font-family: "Radio Canada", sans-serif;
+  color: #ffffff;
+  height: 100%;
+}
+.container-legal {
+  height: 100%;
+  padding-top: 140px;
+  margin: 0 10% 10% 10%;
+}

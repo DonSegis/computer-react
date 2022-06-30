@@ -1,18 +1,65 @@
 import { NavLink } from "react-router-dom";
-import '../diseño/Login.css'
+import "../diseño/Login.css";
+import React from "react";
+import Navbar from "../component/Navbar";
+import Footer from "../component/Footer";
 
-export default function Login(){
-    return(
-        <div className="login-body">
-            <div className="from-login">
-                <h5>Iniciar sesión</h5>
-                <img src={require('../img/login/icono.jpg')} alt=""/>
-                <input classNameName="controls" type="text" name="Usuario" value="" placeholder="Usuario"/>
-                <input className="controls" type="password" name="contrasena" value="" placeholder="Contraseña"/>
-                <NavLink to='/'><button>Ingresar</button></NavLink>
-                <p><NavLink to=''>¿Olvidaste tu contraseña?</NavLink></p>
-                <h4>¿No tienes una cuenta?<NavLink to=''>Registrate</NavLink></h4>
-            </div>
+class Login extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { usuario: "", clave: "" };
+    this.setUsuario = this.setUsuario.bind(this);
+    this.setClave = this.setClave.bind(this);
+    this.enviarDatos = this.enviarDatos.bind(this);
+  }
+  setUsuario(event) {
+    this.setState({ usuario: event.target.value });
+  }
+  setClave(event) {
+    this.setState({ clave: event.target.value });
+  }
+  enviarDatos(event) {
+    alert("usuario:" + this.state.usuario + " clave:" + this.state.clave);
+  }
+  render() {
+    return (
+      <div className="login-body">
+        <Navbar />
+        <div>
+          <div className="from-login">
+            <h5>Iniciar sesión</h5>
+            <img src={require("../img/login/icono.jpg")} alt="" />
+            <input
+              className="controls"
+              type="text"
+              name="Usuario"
+              value={this.state.usuario}
+              onChange={this.setUsuario}
+              placeholder="Usuario"
+            />
+            <input
+              className="controls"
+              type="password"
+              name="contrasena"
+              value={this.state.clave}
+              onChange={this.setClave}
+              placeholder="Contraseña"
+            />
+            <NavLink to="/">
+              <button>Ingresar</button>
+            </NavLink>
+            <p>
+              <NavLink to="">¿Olvidaste tu contraseña?</NavLink>
+            </p>
+            <h4>
+              ¿No tienes una cuenta?<NavLink to="">Registrate</NavLink>
+            </h4>
+          </div>
         </div>
-        )
-    }
+        <Footer />
+      </div>
+    );
+  }
+}
+
+export default Login;
