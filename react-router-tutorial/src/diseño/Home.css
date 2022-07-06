@@ -36,12 +36,18 @@
   filter: blur(1px);
 }
 
-.contenedor {
-  margin-top: 10%;
+@media screen and (max-whith: 600px) {
+  .contenedor {
+    text-align: center;
+  }
+}
+
+.cajaContenedor {
+  margin: 10% auto;
   text-align: center;
 }
 
-.contenedor2 {
+/* .contenedor2 {
   margin-bottom: 10%;
   text-align: center;
 }
@@ -50,7 +56,7 @@
   display: inline-block;
   margin: 30px;
   padding: 10px;
-}
+} */
 
 .brand-logo2 {
   margin-right: 100px;

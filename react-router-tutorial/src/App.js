@@ -16,6 +16,9 @@ import Teclados from "./pag/Teclados";
 import Auriculares from "./pag/Auriculares";
 import Componentes from "./pag/Componentes";
 import Sillas from "./pag/sillas";
+import Cambio_Password from "./pag/Cambio_Password";
+import Recuperar_Password from "./pag/Recuperar_Password";
+import Registro from "./pag/Registro";
 
 export default function App() {
   return (
@@ -36,6 +39,9 @@ export default function App() {
         <Route path="/auriculares" element={<Auriculares />} />
         <Route path="/componentes" element={<Componentes />} />
         <Route path="/sillas" element={<Sillas />} />
+        <Route path="/cambio_password" element={<Cambio_Password />} />
+        <Route path="/recuperar_password" element={<Recuperar_Password />} />
+        <Route path="/registro" element={<Registro />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

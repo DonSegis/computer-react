@@ -35,7 +35,7 @@
 .page-content {
   display: block;
   position: relative;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .page-content h2 {
@@ -156,4 +156,11 @@
   display: inline-block;
   margin: 30px;
   padding: 10px;
+}
+
+.page-content2 {
+  display: block;
+  position: relative;
+  justify-content: center;
+  margin-top: 10%;
 }

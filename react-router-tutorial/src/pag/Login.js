@@ -1,8 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "../diseño/Login.css";
 import React from "react";
-import Navbar from "../component/Navbar";
-import Footer from "../component/Footer";
 
 class Login extends React.Component {
   constructor(props) {
@@ -24,7 +22,6 @@ class Login extends React.Component {
   render() {
     return (
       <div className="login-body">
-        <Navbar />
         <div>
           <div className="from-login">
             <h5>Iniciar sesión</h5>
@@ -49,14 +46,15 @@ class Login extends React.Component {
               <button>Ingresar</button>
             </NavLink>
             <p>
-              <NavLink to="">¿Olvidaste tu contraseña?</NavLink>
+              <NavLink to="/recuperar_password">
+                ¿Olvidaste tu contraseña?
+              </NavLink>
             </p>
             <h4>
-              ¿No tienes una cuenta?<NavLink to="">Registrate</NavLink>
+              ¿No tienes una cuenta?<NavLink to="/registro">Registrate</NavLink>
             </h4>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }
